@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM News Alpha</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #0b1020; color: #e9eefc; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .card { background: #121a33; border: 1px solid #28345f; border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+    h1,h2 { margin-top: 0; }
+    .badge { display:inline-block; padding:6px 10px; border-radius:999px; background:#1f2b52; border:1px solid #3a4d8a; margin-right:6px; }
+    a { color: #9dc1ff; }
+    code { background:#1b2546; padding:2px 6px; border-radius:6px; }
+    ul { line-height:1.7; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>📈 LLM News Alpha</h1>
+      <p>주요 금융 뉴스를 기반으로 종목별 단기 모멘텀 시그널을 추정하는 실험 프로젝트</p>
+      <span class="badge">LLM + Finance</span>
+      <span class="badge">Reuters RSS</span>
+      <span class="badge">Alpha Prototype</span>
+    </div>
+
+    <div class="card">
+      <h2>핵심 기능</h2>
+      <ul>
+        <li>Reuters RSS 기반 뉴스 자동 수집</li>
+        <li>티커 매핑 + 감성/임팩트 점수화</li>
+        <li>종목별 알파 점수 집계 및 LONG/SHORT 후보 생성</li>
+        <li>CSV 결과 저장</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>실행 방법</h2>
+      <p><code>pip install -r requirements.txt</code></p>
+      <p><code>python src/news_alpha.py --use-llm false</code></p>
+      <p>LLM 모드: <code>--use-llm true</code> (OPENAI_API_KEY 필요)</p>
+    </div>
+
+    <div class="card">
+      <h2>GitHub</h2>
+      <p><a href="https://github.com/ba-bobi/llm-news-alpha" target="_blank">Repository 바로가기</a></p>
+      <p>본 사이트는 GitHub Pages로 배포됩니다.</p>
+    </div>
+  </div>
+</body>
+</html>
